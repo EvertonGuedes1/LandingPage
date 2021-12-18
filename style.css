@@ -1,12 +1,14 @@
-/* cores: #ff914d  */
+/* cores: #ff914D  */
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 body {
+  width: 100%;
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
 
+/* Cabeçalho */
 header {
   background-color: #ff914d;
   color: white;
@@ -46,4 +48,73 @@ nav a:hover {
 
 .social-media {
   height: 50px;
+}
+
+/* Conteúdo Principal - Página Inicial */
+
+main {
+  display: grid;
+  min-height: 70vh;
+}
+
+main#home {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+main section {
+  margin: 10px;
+  padding: 10px;
+}
+
+#sobre {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: center;
+}
+
+aside {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  text-align: center;
+  align-self: center;
+  background-color: #ff914d;
+}
+
+#conta-corrente {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border-right: 1px solid #ff914d;
+}
+
+#cartao {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+/* Rodapé */
+
+footer {
+  background-color: #ff914d;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 10vh;
+}
+
+footer section {
+  justify-self: center;
+  align-self: center;
+}
+
+footer h3 {
+  background-color: #ffbd59;
+  padding: 5px;
 }
