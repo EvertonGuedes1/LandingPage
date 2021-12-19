@@ -118,3 +118,14 @@ footer h3 {
   background-color: #ffbd59;
   padding: 5px;
 }
+
+@media screen and (max-width: 375) {
+  body {
+    padding-bottom: 30vh;
+  }
+
+  .responsive {
+    display: flex;
+    flex-direction: column;
+  }
+}
